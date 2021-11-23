@@ -102,19 +102,147 @@ class _HuminityState extends State<Huminity> {
 
   info() {
     return SingleChildScrollView(
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-            minHeight: 10,
-            maxWidth: MediaQuery.of(context).size.width,
-            maxHeight: MediaQuery.of(context).size.height),
-        child: Container(
-          child: Column(
+      child: Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            slider(),
+            block(),
+            block2(),
+            block3(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  block3() {
+    return Container(
+      color: Colors.grey,
+      child: Container(
+        margin: EdgeInsets.only(right: 100, left: 100, bottom: 30, top: 30),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(30.0),
+                  child: Container(
+                    margin: EdgeInsets.all(2),
+                    color: Colors.red,
+                    width: 200,
+                    height: 200,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Become A Volantear",
+                          textScaleFactor: 1.2,
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(30.0),
+                  child: Container(
+                    alignment: Alignment.center,
+                    child: Text("Give Donation",
+                        textScaleFactor: 1.2,
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    margin: EdgeInsets.all(2),
+                    color: Colors.yellow,
+                    width: 200,
+                    height: 200,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  block2() {
+    return Container(
+      child: Column(
+        children: [
+          Row(
             children: [
-              slider(),
-              block(),
+              Container(
+                margin: EdgeInsets.only(right: 100, left: 100, bottom: 30),
+                height: 250,
+                width: 900,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      " Our Mission",
+                      textScaleFactor: 3.5,
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl",
+                      textScaleFactor: 1.2,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                  ],
+                ),
+              ),
+              Row(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Container(
+                      margin: EdgeInsets.all(2),
+                      color: Colors.red,
+                      width: 200,
+                      height: 200,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Become A Volantear",
+                            textScaleFactor: 1.2,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: Text("Give Donation",
+                          textScaleFactor: 1.2,
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      margin: EdgeInsets.all(2),
+                      color: Colors.yellow,
+                      width: 200,
+                      height: 200,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
-        ),
+        ],
       ),
     );
   }
@@ -123,8 +251,110 @@ class _HuminityState extends State<Huminity> {
     return Container(
       child: Column(
         children: [
-          Column(
-            children: [Text("data")],
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.only(right: 100, left: 100, bottom: 30),
+                height: 450,
+                width: 900,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      "About Our Charity",
+                      textScaleFactor: 3.5,
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl",
+                      textScaleFactor: 1.2,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit  Duis varius faucibus ligula non congue. Suspendisse at pretium massa, sit amet vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl",
+                      textScaleFactor: 1.2,
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Container(
+                      margin: EdgeInsets.all(2),
+                      color: Colors.red,
+                      width: 200,
+                      height: 200,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Become A Volantear",
+                            textScaleFactor: 1.2,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: Text("Give Donation",
+                          textScaleFactor: 1.2,
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      margin: EdgeInsets.all(2),
+                      color: Colors.yellow,
+                      width: 200,
+                      height: 200,
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: Text(
+                        "quck found raiser",
+                        textScaleFactor: 1.2,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      margin: EdgeInsets.all(2),
+                      color: Colors.blue,
+                      width: 200,
+                      height: 200,
+                    ),
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Help Some One",
+                        textScaleFactor: 1.2,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      margin: EdgeInsets.all(2),
+                      color: Colors.red,
+                      width: 200,
+                      height: 200,
+                    ),
+                  ),
+                ],
+              )
+            ],
           ),
         ],
       ),
